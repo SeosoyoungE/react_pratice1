@@ -1,9 +1,9 @@
 import { useState } from "react";
 
 import "./App.css";
-import Expenses from "./components/Expenses";
+import Expenses from "./components/Expense/Expenses";
 
-function App() {
+const App = () => {
   const expenses = [
     {
       id: "e1",
@@ -30,6 +30,6 @@ function App() {
       <Expenses expenses={expenses} />
     </div>
   );
-}
+};
 
 export default App;
